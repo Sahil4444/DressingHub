@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+
+.navbar {
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  padding: 15px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0;
+}
+
+.nav-logo img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.nav-logo p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 25px;
+  color: #171717;
+  margin: 0;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  list-style: none;
+  font-size: 17px;
+  margin: 0;
+}
+
+.nav-menu li:hover{
+    cursor: pointer;
+}
+
+.nav-menu li hr {
+  border: none;
+  width: 80%;
+  height: 3px;
+  border-radius: 10px;
+  background: #5e17eb;
+}
+
+.login-cart {
+  display: flex;
+  align-items: center;
+  gap: 45px;
+}
+
+.login-cart button {
+  --primary-color: #645bff;
+  --secondary-color: #fff;
+  --hover-color: #111;
+  --arrow-width: 10px;
+  --arrow-stroke: 2px;
+  box-sizing: border-box;
+  border: 0;
+  border-radius: 20px;
+  color: var(--secondary-color);
+  padding: 1em 1.8em;
+  background: var(--primary-color);
+  display: flex;
+  transition: 0.2s background;
+  align-items: center;
+  gap: 0.6em;
+  font-weight: bold;
+}
+
+.login-cart button .arrow-wrapper {
+  margin-left: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-cart button .arrow {
+  margin-top: 1px;
+  width: var(--arrow-width);
+  background: var(--primary-color);
+  height: var(--arrow-stroke);
+  position: relative;
+  transition: 0.2s;
+}
+
+.login-cart button .arrow::before {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  border: solid var(--secondary-color);
+  border-width: 0 var(--arrow-stroke) var(--arrow-stroke) 0;
+  display: inline-block;
+  top: -3px;
+  right: 3px;
+  transition: 0.2s;
+  padding: 3px;
+  transform: rotate(-45deg);
+}
+
+.login-cart button:hover {
+  background-color: var(--hover-color);
+}
+
+.login-cart button:hover .arrow {
+  background: var(--secondary-color);
+}
+
+.login-cart button:hover .arrow:before {
+  right: 0;
+}
+
+.login-cart i{
+    font-size: 30px;
+}
+
+.cart-count{
+    width: 22px;
+    height: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -35px;
+    margin-left: -55px;
+    border-radius: 11px;
+    font-size: 14px;
+    background: red;
+    color: white;
+}

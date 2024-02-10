@@ -1,0 +1,149 @@
+.cart-items {
+  margin: 100px 170px;
+}
+
+.cart-items hr {
+  height: 3px;
+  background: #e2e2e2;
+  border: 0;
+}
+
+.cartItems-format-main {
+  display: grid;
+  grid-template-columns: 0.5fr 2fr 1fr 1fr 1fr 1fr;
+  align-items: center;
+  gap: 75px;
+  padding: 20px 0px;
+  color: #454545;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.cartItems-format {
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.cartIcon-productIcon {
+  height: 62px;
+}
+
+.cartItems-remove-icon {
+  width: 15px;
+  margin: 0px 40px;
+  cursor: pointer;
+}
+
+.cartItems-quantity {
+  width: 64px;
+  height: 30px;
+  border: 2px solid #5e17eb;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cartItems-down {
+  display: flex;
+  margin: 100px 0px;
+}
+
+.cartItems-total {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin-right: 200px;
+  gap: 40px;
+}
+
+.cartItems-total-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0px;
+}
+
+.cartItems-total button {
+  --color: #560bad;
+  display: inline-block;
+  width: 262px;
+  margin-bottom: 20px;
+  height: 2.6em;
+  line-height: 2.5em;
+  position: relative;
+  overflow: hidden;
+  border: 2px solid var(--color);
+  transition: color 0.5s;
+  z-index: 1;
+  font-size: 17px;
+  border-radius: 4px;
+  font-weight: 500;
+  color: var(--color);
+}
+
+.cartItems-total button:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background: var(--color);
+  height: 120px;
+  width: 320px;
+  border-radius: 50%;
+}
+
+.cartItems-total button:hover {
+  color: #fff;
+  cursor: pointer;
+}
+
+.cartItems-total button:before {
+  top: 100%;
+  left: 100%;
+  transition: all 0.7s;
+}
+
+.cartItems-total button:hover:before {
+  top: -30px;
+  left: -30px;
+}
+
+.cartItems-total button:active:before {
+  background: #3a0ca3;
+  transition: background 0s;
+}
+
+.cartItems-promocode{
+    flex: 1;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.cartItems-promocode p{
+    color: #555;
+}
+
+.cartItems-promobox{
+    width: 504px;
+    margin-top: 15px;
+    padding-left: 20px;
+    height: 50px;
+    background: #eaeaea;
+}
+
+.cartItems-promobox input{
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 16px;
+    width: 330px;
+    height: 50px;
+}
+
+.cartItems-promobox button{
+    width: 170px;
+    height: 50px;
+    font-size: 16px;
+    background: black;
+    color: #fff;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}

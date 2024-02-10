@@ -1,0 +1,93 @@
+.shop-category {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.shopCategory-banner {
+  display: block;
+  margin: 30px auto;
+  width: 82%;
+}
+
+.ShopCategoryIndexSort {
+  display: flex;
+  margin: 0px 140px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ShopCategoryIndexSort p{
+    margin: 100px 0px;
+}
+
+.ShopCategoryIndexSort p span {
+  font-weight: 600;
+}
+
+.ShopCategorySort {
+  padding: 10px 20px;
+  border-radius: 40px;
+  border: 1px solid #888;
+}
+
+.shopCategoryProducts {
+  margin: 20px 140px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px;
+  row-gap: 80px;
+}
+
+.shop-category button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 100px auto;
+  --color: #560bad;
+  display: inline-block;
+  width: 262px;
+  height: 2.6em;
+  line-height: 2.5em;
+  position: relative;
+  overflow: hidden;
+  border: 2px solid var(--color);
+  transition: color 0.5s;
+  z-index: 1;
+  font-size: 17px;
+  border-radius: 4px;
+  font-weight: 500;
+  color: var(--color);
+}
+
+.shop-category button:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background: var(--color);
+  height: 120px;
+  width: 320px;
+  border-radius: 50%;
+}
+
+.shop-category button:hover {
+  color: #fff;
+  cursor: pointer;
+}
+
+.shop-category button:before {
+  top: 100%;
+  left: 100%;
+  transition: all 0.7s;
+}
+
+.shop-category button:hover:before {
+  top: -30px;
+  left: -30px;
+}
+
+.shop-category button:active:before {
+  background: #3a0ca3;
+  transition: background 0s;
+}

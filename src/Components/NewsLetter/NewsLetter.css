@@ -1,0 +1,72 @@
+.news-letter {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 140px;
+  margin: 30px auto 150px auto;
+  background: linear-gradient(180deg, #fde1ff 0%, #e1ffea22 60%);
+  gap: 30px;
+}
+
+.news-letter h1{
+  color: #454545;
+  font-size: 55px;
+  font-weight: 600;
+}
+
+.news-letter p{
+  color: #454545;
+  font-size: 20px;
+}
+
+.news-letter div{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  width: 730px;
+  height: 70px;
+  border-radius: 80px;
+  border: 1px solid #e3e3e3;
+}
+
+.news-letter input{
+  width: 500px;
+  margin-left: 30px;
+  border: none;
+  outline: none;
+  color: #616161;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+}
+
+.news-letter button {
+  padding: 17px 40px;
+  border-radius: 50px;
+  cursor: pointer;
+  border: 0;
+  background-color: white;
+  box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-size: 15px;
+  transition: all 0.5s ease;
+}
+
+.news-letter button:hover {
+  letter-spacing: 3px;
+  background-color: hsl(261deg 80% 48%);
+  color: hsl(0, 0%, 100%);
+  box-shadow: rgb(93 24 220) 0px 7px 29px 0px;
+}
+
+.news-letter button:active {
+  letter-spacing: 3px;
+  background-color: hsl(261deg 80% 48%);
+  color: hsl(0, 0%, 100%);
+  box-shadow: rgb(93 24 220) 0px 0px 0px 0px;
+  transform: translateY(10px);
+  transition: 100ms;
+}

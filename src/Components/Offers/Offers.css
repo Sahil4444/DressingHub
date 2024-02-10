@@ -1,0 +1,103 @@
+.offers{
+    width: 65%;
+    height: auto;
+    margin: 30px auto;
+    display: flex;
+    padding: 0px 120px;
+    margin-bottom: 150px;
+    background: linear-gradient(180deg, #fde1ff 0%, #e1ffea22 60%);
+}
+
+.offers-left{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.offers-left h1{
+    color: #171717;
+    font-size: 80px;
+    font-weight: 600;
+}
+
+.offers-left p{
+    color: #171717;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.offers-left button {
+  --primary-color: #645bff;
+  --secondary-color: #fff;
+  --hover-color: #111;
+  --arrow-width: 10px;
+  --arrow-stroke: 2px;
+  width: 145px;
+  box-sizing: border-box;
+  border: 0;
+  border-radius: 20px;
+  color: var(--secondary-color);
+  padding: 1em 1.8em;
+  background: var(--primary-color);
+  display: flex;
+  transition: 0.2s background;
+  align-items: center;
+  gap: 0.6em;
+  font-weight: bold;
+}
+
+.offers-left button .arrow-wrapper {
+  margin-left: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.offers-left button .arrow {
+  margin-top: 1px;
+  width: var(--arrow-width);
+  background: var(--primary-color);
+  height: var(--arrow-stroke);
+  position: relative;
+  transition: 0.2s;
+}
+
+.offers-left button .arrow::before {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  border: solid var(--secondary-color);
+  border-width: 0 var(--arrow-stroke) var(--arrow-stroke) 0;
+  display: inline-block;
+  top: -3px;
+  right: 3px;
+  transition: 0.2s;
+  padding: 3px;
+  transform: rotate(-45deg);
+}
+
+.offers-left button:hover {
+  background-color: var(--hover-color);
+}
+
+.offers-left button:hover .arrow {
+  background: var(--secondary-color);
+}
+
+.offers-left button:hover .arrow:before {
+  right: 0;
+}
+
+.offers-right {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-top: 50px;
+}
+
+/* .offers-right img{
+    width: 200px;
+} */
